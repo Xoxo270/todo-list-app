@@ -92,9 +92,9 @@
 	 * An event to fire whenever you want to add an item. Simply pass in the event
 	 * object and it'll handle the DOM insertion and saving of the new item.
 	 */
-	Controller.prototype.addItem = function (title) {
+	Controller.prototype.adddItem = function (title) {
 		var self = this;
-		
+
 		if (title.trim() === '') {
 			return;
 		}
@@ -120,7 +120,6 @@
 	 */
 	Controller.prototype.editItemSave = function (id, title) {
 		var self = this;
-		console.log("title here : ",title[0]);
 
 		while (title[0] === " ") {
 			title = title.slice(1);
